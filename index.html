@@ -1,0 +1,1144 @@
+<!DOCTYPE html>
+<html lang="en" class="theme-color-e83b35 theme-skin-dark">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Brian Ault</title>
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" type="image/ico" href="img/favicon.png"/>
+
+    <!-- Google Fonts -->
+    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Fredoka+One">
+    <link rel="stylesheet" type="text/css"
+          href="https://fonts.googleapis.com/css?family=Open+Sans:300,300italic,400,400italic,600,600italic,700,700italic,800,800italic">
+
+    <!-- Icon Fonts -->
+    <link rel="stylesheet" type="text/css" href="fonts/map-icons/css/map-icons.min.css">
+    <link rel="stylesheet" type="text/css" href="fonts/icomoon/style.css">
+
+    <!-- Styles -->
+    <link rel="stylesheet" type="text/css" href="js/plugins/jquery.bxslider/jquery.bxslider.css">
+    <link rel="stylesheet" type="text/css" href="js/plugins/jquery.customscroll/jquery.mCustomScrollbar.min.css">
+    <link rel="stylesheet" type="text/css" href="js/plugins/jquery.mediaelement/mediaelementplayer.min.css">
+    <link rel="stylesheet" type="text/css" href="js/plugins/jquery.fancybox/jquery.fancybox.css">
+    <link rel="stylesheet" type="text/css" href="js/plugins/jquery.owlcarousel/owl.carousel.css">
+    <link rel="stylesheet" type="text/css" href="js/plugins/jquery.owlcarousel/owl.theme.css">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" type="text/css" href="colors/red.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- Modernizer for detect what features the user’s browser has to offer -->
+    <script type="text/javascript" src="js/libs/modernizr.js"></script>
+</head>
+
+<body class="home header-has-img loading">
+<div class="mobile-nav">
+    <button class="btn-mobile mobile-nav-close"><i class="rsicon rsicon-close"></i></button>
+    <div class="mobile-nav-inner">
+        <nav id="mobile-nav" class="nav">
+            <ul class="clearfix">
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#references">References</a></li>
+                <li><a href="#contact">Contact <span></span></a></li>
+            </ul>
+        </nav>
+    </div>
+</div>
+
+<!--<div class="sidebar sidebar-fixed">
+    <button class="btn-sidebar btn-sidebar-close"><i class="rsicon rsicon-close"></i></button>
+    <div class="widget-area">
+        <aside class="widget widget-profile">
+            <div class="profile-photo">
+                <img src="img/uploads/rs-photo-v2.jpg" alt="Brian Ault"/> &lt;!&ndash;TODO: replace picture&ndash;&gt;
+            </div>
+            <div class="profile-info">
+                <h2 class="profile-title">Brian Ault</h2>
+                <h3 class="profile-position">Developer</h3>
+            </div>
+        </aside>
+        <aside class="widget widget_contact">
+            <h2 class="widget-title">Contact Me</h2>
+            <form class="rsForm" action="php/mailsender.php" method="post">
+                <div class="input-field">
+                    <label>Name</label>
+                    <input type="text" name="rsName" value="">
+                    <span class="line"></span>
+                </div>
+                <div class="input-field">
+                    <label>Email</label>
+                    <input type="email" name="rsEmail" value="">
+                    <span class="line"></span>
+                </div>
+                <div class="input-field">
+                    <label>Subject</label>
+                    <input type="text" name="rsSubject" value="">
+                    <span class="line"></span>
+                </div>
+                <div class="input-field">
+                    <label>Message</label>
+                    <textarea rows="4" name="rsMessage"></textarea>
+                    <span class="line"></span>
+                </div>
+                <span class="btn-outer btn-primary-outer ripple">
+                    <input class="rsFormSubmit btn btn-lg btn-primary" type="submit" value="Send">
+                </span>
+            </form>
+        </aside>
+        &lt;!&ndash; .widget_contact &ndash;&gt;
+    </div>
+    &lt;!&ndash; .widget-area &ndash;&gt;
+</div>-->
+
+<div class="wrapper">
+    <header class="header">
+        <div class="head-bg" style="background-image: url('img/code_bg.jpg')"></div>
+        <div class="head-bar">
+            <div class="head-bar-inner">
+                <div class="row">
+                    <div class="col-sm-3 col-xs-6">
+                        <a class="logo" href="index.html"><span>BA</span></a> <!--TODO:replace logo-->
+                        <!-- <a class="head-logo" href=""><img src="img/rs-logo.png" alt="RScard"/></a> -->
+                    </div>
+                    <div class="col-sm-9 col-xs-6">
+                        <div class="nav-wrap">
+                            <nav id="nav" class="nav">
+                                <ul class="clearfix">
+                                    <li><a href="#about">About</a></li>
+                                    <li><a href="#skills">Skills</a></li>
+                                    <li><a href="#portfolio">Portfolio</a></li>
+                                    <li><a href="#experience">Experience</a></li>
+                                    <li><a href="#references">References</a></li>
+                                    <li><a href="#contact">Contact <span></span></a></li>
+                                </ul>
+                            </nav>
+                            <button class="btn-mobile btn-mobile-nav">Menu</button>
+                            <!--<button class="btn-sidebar btn-sidebar-open"><i class="rsicon rsicon-menu"></i></button>-->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <div class="content">
+        <div class="container">
+            <section id="about" class="section section-about">
+                <div class="animate-up">
+                    <div class="section-box">
+                        <div class="profile">
+                            <div class="row">
+                                <div class="col-xs-5">
+                                    <div class="profile-photo"><img src="img/hacker.jpg" alt="Brian Ault"/></div>
+                                </div>
+                                <div class="col-xs-7">
+                                    <div class="profile-info">
+                                        <!--<div class="profile-preword"><span>Hello</span></div>-->
+                                        <h1 class="profile-title"><span>I'm </span>Brian Ault</h1>
+                                        <h2 class="profile-position">Mobile/Web Developer</h2></div>
+                                    <ul class="profile-list">
+                                        <!--<li class="clearfix">
+                                            <strong class="title">Location</strong>
+                                            <span class="cont">Lake Forest, CA</span>
+                                        </li>-->
+                                        <!--<li class="clearfix">
+                                            <strong class="title"><span class="button">On Vacation</span></strong>
+                                            <span class="cont"><i class="rsicon rsicon-calendar"></i>till March 25, 2016</span>
+                                        </li>-->
+                                        <p>I started in QA and was given the opportunity to teach myself programming and expand my skills as a developer while working on mobile projects.  I've worked on iOS & Android projects, both native & Unity3d, and have expanded into Web projects. </p>
+                                    </ul>
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="profile-social">
+                            <ul class="social">
+                                <li><a class="ripple-centered" href="https://www.linkedin.com/in/baultik"
+                                       target="_blank"><i
+                                        class="rsicon rsicon-linkedin"></i></a></li>
+                                <li><a class="ripple-centered" href="https://github.com/Baultik" target="_blank"><i
+                                        class="rsicon rsicon-github"></i></a></li>
+                                <li><a class="ripple-centered" href="mailto:baultik@gmail.com" target="_blank"><i
+                                        class="rsicon fa fa-envelope"></i></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="section-txt-btn">
+                        <p>
+                            <a class="btn btn-lg btn-border ripple" target="_blank"
+                               href="">Download Resume</a>
+                        </p>
+                    </div>
+                </div>
+            </section>
+            <section id="prices" class="section section-prices">
+                <div class="animate-up">
+                    <!--<h2 class="section-title">Pricing</h2>-->
+                    <div class="row price-list">
+                        <div class="col-sm-4">
+                            <div class="price-box">
+                                <div class="price-box-top">
+                                    <i class="fa fa-lightbulb-o" style="font-size:3em"></i>
+                                </div>
+                                <div class="price-box-content">
+                                    <h3>Application</h3>
+                                    <p>I love creating something from a seed of an idea through to a useful elegant end product.</p>
+                                    <!--<div class="btn-wrap">
+                                        <a class="btn btn-lg btn-border" href="#">Buy Now</a>
+                                    </div>-->
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-4">
+                            <div class="price-box">
+                                <div class="price-box-top">
+                                    <i class="fa fa-code" style="font-size: 3em"></i>
+                                </div>
+                                <div class="price-box-content">
+                                    <h3>Web</h3>
+                                    <p>I followed my passion for programming from mobile to web to challenge myself and expand my skill set.</p>
+                                    <!--<div class="btn-wrap">
+                                        <a class="btn btn-lg btn-border" href="#">Buy Now</a>
+                                    </div>-->
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-sm-4">
+                            <div class="price-box">
+                                <div class="price-box-top">
+                                    <i class="fa fa-mobile" style="font-size: 3em"></i>
+                                </div>
+                                <div class="price-box-content">
+                                    <h3>Mobile</h3>
+                                    <p>
+                                        Skilled iOS and Android developer with a passion and drive to learn and excel. Mostly self taught, I pursued a career as a programmer while working in QA.
+                                    </p>
+                                    <!--<div class="btn-wrap">
+                                        <a class="btn btn-lg btn-border" href="#">Buy Now</a>
+                                    </div>-->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section id="skills" class="section section-skills">
+                <div class="animate-up">
+                    <h2 class="section-title">Professional Skills</h2>
+                    <div class="section-box">
+                        <div class="row">
+                            <div class="col-sm-3">
+                                <div class="progress-bar">
+                                    <div class="bar-data">
+                                        <span class="bar-title">HTML</span>
+                                        <!--<span class="bar-value">80%</span>-->
+                                    </div>
+                                    <div class="bar-line">
+                                        <span class="bar-fill" data-width="70%"></span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-3">
+                                <div class="progress-bar">
+                                    <div class="bar-data">
+                                        <span class="bar-title">JavaScript</span>
+                                        <!--<span class="bar-value">52%</span>-->
+                                    </div>
+                                    <div class="bar-line">
+                                        <span class="bar-fill" data-width="70%"></span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-3">
+                                <div class="progress-bar">
+                                    <div class="bar-data">
+                                        <span class="bar-title">CSS</span>
+                                        <!--<span class="bar-value">61%</span>-->
+                                    </div>
+                                    <div class="bar-line">
+                                        <span class="bar-fill" data-width="60%"></span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-3">
+                                <div class="progress-bar">
+                                    <div class="bar-data">
+                                        <span class="bar-title">jQuery</span>
+                                        <!--<span class="bar-value">89%</span>-->
+                                    </div>
+                                    <div class="bar-line">
+                                        <span class="bar-fill" data-width="75%"></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-sm-3">
+                                <div class="progress-bar">
+                                    <div class="bar-data">
+                                        <span class="bar-title">Bootstrap</span>
+                                        <!--<span class="bar-value">50%</span>-->
+                                    </div>
+                                    <div class="bar-line">
+                                        <span class="bar-fill" data-width="80%"></span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-3">
+                                <div class="progress-bar">
+                                    <div class="bar-data">
+                                        <span class="bar-title">PHP & MySQL</span>
+                                        <!--<span class="bar-value">99%</span>-->
+                                    </div>
+                                    <div class="bar-line">
+                                        <span class="bar-fill" data-width="50%"></span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-3">
+                                <div class="progress-bar">
+                                    <div class="bar-data">
+                                        <span class="bar-title">AngularJS</span>
+                                        <!--<span class="bar-value">50%</span>-->
+                                    </div>
+                                    <div class="bar-line">
+                                        <span class="bar-fill" data-width="65%"></span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-3">
+                                <div class="progress-bar">
+                                    <div class="bar-data">
+                                        <span class="bar-title">Node.js</span>
+                                        <!--<span class="bar-value">50%</span>-->
+                                    </div>
+                                    <div class="bar-line">
+                                        <span class="bar-fill" data-width="50%"></span>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="row">
+
+                        </div>
+
+                        <div class="row">
+                            <div class="col-sm-3">
+                                <div class="progress-bar">
+                                    <div class="bar-data">
+                                        <span class="bar-title">Objective-C</span>
+                                        <!--<span class="bar-value">50%</span>-->
+                                    </div>
+                                    <div class="bar-line">
+                                        <span class="bar-fill" data-width="85%"></span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-3">
+                                <div class="progress-bar">
+                                    <div class="bar-data">
+                                        <span class="bar-title">Java</span>
+                                        <!--<span class="bar-value">50%</span>-->
+                                    </div>
+                                    <div class="bar-line">
+                                        <span class="bar-fill" data-width="70%"></span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-3">
+                                <div class="progress-bar">
+                                    <div class="bar-data">
+                                        <span class="bar-title">iOS SDK</span>
+                                        <!--<span class="bar-value">50%</span>-->
+                                    </div>
+                                    <div class="bar-line">
+                                        <span class="bar-fill" data-width="75%"></span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-3">
+                                <div class="progress-bar">
+                                    <div class="bar-data">
+                                        <span class="bar-title">Android SDK</span>
+                                        <!--<span class="bar-value">50%</span>-->
+                                    </div>
+                                    <div class="bar-line">
+                                        <span class="bar-fill" data-width="75%"></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-sm-3">
+                                <div class="progress-bar">
+                                    <div class="bar-data">
+                                        <span class="bar-title">Unity</span>
+                                        <!--<span class="bar-value">50%</span>-->
+                                    </div>
+                                    <div class="bar-line">
+                                        <span class="bar-fill" data-width="55%"></span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-3">
+                                <div class="progress-bar">
+                                    <div class="bar-data">
+                                        <span class="bar-title">C#</span>
+                                        <!--<span class="bar-value">50%</span>-->
+                                    </div>
+                                    <div class="bar-line">
+                                        <span class="bar-fill" data-width="50%"></span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-3">
+                                <div class="progress-bar">
+                                    <div class="bar-data">
+                                        <span class="bar-title">Git</span>
+                                        <!--<span class="bar-value">50%</span>-->
+                                    </div>
+                                    <div class="bar-line">
+                                        <span class="bar-fill" data-width="80%"></span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-3">
+                                <div class="progress-bar">
+                                    <div class="bar-data">
+                                        <span class="bar-title">Firebase</span>
+                                        <!--<span class="bar-value">50%</span>-->
+                                    </div>
+                                    <div class="bar-line">
+                                        <span class="bar-fill" data-width="70%"></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section id="clients" class="section section-clients">
+                <div class="animate-up">
+                    <div class="clients-carousel">
+                        <div class="client-logo">
+                            <img src="img/logos/logo-angularjs.png" title="angular js" alt="angular js"/>
+                        </div>
+                        <div class="client-logo">
+                            <img src="img/logos/logo-bootstrap.png" title="bootstrap" alt="bootstrap"/>
+                        </div>
+                        <div class="client-logo">
+                            <img src="img/logos/logo-jasmine.png" title="jasmine" alt="jasmine"/>
+                        </div>
+                        <div class="client-logo">
+                            <img src="img/logos/logo-jquery.png" title="jquery" alt="jquery"/>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section id="portfolio" class="section section-portfolio">
+                <div class="animate-up">
+                    <h2 class="section-title">Portfolio</h2>
+                    <div class="filter">
+                        <div class="filter-inner">
+                            <div class="filter-btn-group">
+                                <button data-filter="*">All</button>
+                                <button data-filter=".ios">iOS</button>
+                                <button data-filter=".android">Android</button>
+                                <button data-filter=".web">Web</button>
+                            </div>
+                            <div class="filter-bar">
+                                <span class="filter-bar-line"></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="grid">
+                        <div class="grid-sizer"></div>
+                        <div class="grid-item size11 web">
+                            <div class="grid-box">
+                                <figure class="portfolio-figure">
+                                    <img src="img/screenshots/screen_streamism.png" alt="Streamism"/>
+                                    <figcaption class="portfolio-caption">
+                                        <div class="portfolio-caption-inner">
+                                            <h3 class="portfolio-title">Streamism.tv</h3>
+                                            <h4 class="portfolio-cat">Live stream aggregator</h4>
+                                            <div class="btn-group">
+                                                <a class="btn-link" href="http://streamism.tv" target="_blank">
+                                                    <i class="rsicon fa fa-link"></i>
+                                                </a>
+                                                <a class="btn-link"
+                                                   href="https://github.com/Learning-Fuze/C11.16_news_stream"
+                                                   target="_blank">
+                                                    <i class="rsicon fa fa-github"></i>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </figcaption>
+                                </figure>
+                            </div>
+                        </div>
+                        <div class="grid-item size11 web">
+                            <div class="grid-box">
+                                <figure class="portfolio-figure">
+                                    <img src="img/screenshots/screen_ttt.png" alt="Tic-Tac-Toe"/>
+                                    <figcaption class="portfolio-caption">
+                                        <div class="portfolio-caption-inner">
+                                            <h3 class="portfolio-title">Tic-Tac-Toe</h3>
+                                            <h4 class="portfolio-cat">Sleek, futuristic themed, time based tic tac toe
+                                                game</h4>
+                                            <div class="btn-group">
+                                                <a class="btn-link"
+                                                   href="https://milezperhour.github.io/C11.16_tictactoe/"
+                                                   target="_blank">
+                                                    <i class="rsicon fa fa-link"></i>
+                                                </a>
+                                                <a class="btn-link"
+                                                   href="https://github.com/milezperhour/C11.16_tictactoe/"
+                                                   target="_blank">
+                                                    <i class="rsicon fa fa-github"></i>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </figcaption>
+                                </figure>
+                            </div>
+                        </div>
+                        <div class="grid-item size11 web">
+                            <div class="grid-box">
+                                <figure class="portfolio-figure">
+                                    <img src="img/screenshots/screen_fff.png" alt="Find Food Fast"/>
+                                    <figcaption class="portfolio-caption">
+                                        <div class="portfolio-caption-inner">
+                                            <h3 class="portfolio-title">Find Food Fast</h3>
+                                            <h4 class="portfolio-cat">Mobile focued site to find fast food in transit in
+                                                the direction you’re already heading</h4>
+                                            <div class="btn-group">
+                                                <a class="btn-link" href="https://stashaway.github.io/C11.16_hackathon/"
+                                                   target="_blank">
+                                                    <i class="rsicon fa fa-link"></i>
+                                                </a>
+                                                <a class="btn-link" href="https://github.com/stashaway/C11.16_hackathon"
+                                                   target="_blank">
+                                                    <i class="rsicon fa fa-github"></i>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </figcaption>
+                                </figure>
+                            </div>
+                        </div>
+                        <div class="grid-item size11 web">
+                            <div class="grid-box">
+                                <figure class="portfolio-figure">
+                                    <img src="img/screenshots/screen_ff.png" alt="Tales End"/>
+                                    <figcaption class="portfolio-caption">
+                                        <div class="portfolio-caption-inner">
+                                            <h3 class="portfolio-title">Tales End</h3>
+                                            <h4 class="portfolio-cat">Memory game featuring characters from the Final Fantasy series</h4>
+                                            <div class="btn-group">
+                                                <a class="btn-link" href=""
+                                                   target="_blank">
+                                                    <i class="rsicon fa fa-link"></i>
+                                                </a>
+                                                <a class="btn-link" href="https://github.com/Baultik/memory_match"
+                                                   target="_blank">
+                                                    <i class="rsicon fa fa-github"></i>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </figcaption>
+                                </figure>
+                            </div>
+                        </div>
+                        <div class="grid-item size11 web">
+                            <div class="grid-box">
+                                <figure class="portfolio-figure">
+                                    <img src="" alt=""/>
+                                    <figcaption class="portfolio-caption">
+                                        <div class="portfolio-caption-inner">
+                                            <h3 class="portfolio-title">Angular SGT or TODO?</h3>
+                                            <h4 class="portfolio-cat"></h4>
+                                            <div class="btn-group">
+                                                <a class="btn-link" href=""
+                                                   target="_blank">
+                                                    <i class="rsicon fa fa-link"></i>
+                                                </a>
+                                                <a class="btn-link" href=""
+                                                   target="_blank">
+                                                    <i class="rsicon fa fa-github"></i>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </figcaption>
+                                </figure>
+                            </div>
+                        </div>
+                        <div class="grid-item size11 ios android">
+                            <div class="grid-box">
+                                <figure class="portfolio-figure">
+                                    <img src="img/screenshots/screen_golo.png" alt="GOLO Fore! Friends"/>
+                                    <figcaption class="portfolio-caption">
+                                        <div class="portfolio-caption-inner">
+                                            <h3 class="portfolio-title">GOLO Fore! Friends</h3>
+                                            <h4 class="portfolio-cat">iOS | Android | Facebook</h4>
+                                            <div class="btn-group">
+                                                <a class="btn-link"
+                                                   href="https://itunes.apple.com/us/app/golo-fore!-friends/id632865197?mt=8"
+                                                   target="_blank">
+                                                    <i class="rsicon fa fa-apple"></i>
+                                                </a>
+                                                <a class="btn-link"
+                                                   href="https://play.google.com/store/apps/details?id=com.puap.golo3d&hl=en"
+                                                   target="_blank">
+                                                    <i class="rsicon fa fa-android"></i>
+                                                </a>
+                                                <a class="btn-link" href="https://apps.facebook.com/playgolo/"
+                                                   target="_blank">
+                                                    <i class="rsicon fa fa-facebook"></i>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </figcaption>
+                                </figure>
+
+                            </div>
+                        </div>
+                        <div class="grid-item size11 android">
+                            <div class="grid-box">
+                                <figure class="portfolio-figure">
+                                    <img src="img/screenshots/screen_anb.png" alt="Aliens Need Burgers"/>
+                                    <figcaption class="portfolio-caption">
+                                        <div class="portfolio-caption-inner">
+                                            <h3 class="portfolio-title">Aliens Need Burgers</h3>
+                                            <h4 class="portfolio-cat">Alien invading fun</h4>
+                                            <div class="btn-group">
+                                                <a class="btn-link"
+                                                   href="https://play.google.com/store/apps/details?id=com.puap.anb&hl=en"
+                                                   target="_blank">
+                                                    <i class="rsicon fa fa-android"></i>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </figcaption>
+                                </figure>
+                            </div>
+                        </div>
+                        <!-- .grid-item -->
+
+                        <div class="grid-item size11 ios android">
+                            <div class="grid-box">
+                                <figure class="portfolio-figure">
+                                    <img src="img/screenshots/screen_airstream.jpeg" alt="Airstream Everywhere"/>
+                                    <figcaption class="portfolio-caption">
+                                        <div class="portfolio-caption-inner">
+                                            <h3 class="portfolio-title">Airstream Everywhere</h3>
+                                            <h4 class="portfolio-cat">Imagine yourself there ... in your Airstream</h4>
+
+                                            <div class="btn-group">
+                                                <a class="btn-link"
+                                                   href="https://itunes.apple.com/us/app/airstream-everywhere/id878308453?ls=1&mt=8"
+                                                   target="_blank">
+                                                    <i class="rsicon fa fa-apple"></i>
+                                                </a>
+                                                <a class="btn-link"
+                                                   href="https://play.google.com/store/apps/details?id=com.blacksunpro.airstream"
+                                                   target="_blank">
+                                                    <i class="rsicon fa fa-android"></i>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </figcaption>
+                                </figure>
+                            </div>
+                        </div>
+                        <div class="grid-item size11 ios android">
+                            <div class="grid-box">
+                                <figure class="portfolio-figure">
+                                    <img src="img/screenshots/screen_hella.jpeg" alt="HellaClips"/>
+                                    <figcaption class="portfolio-caption">
+                                        <div class="portfolio-caption-inner">
+                                            <h3 class="portfolio-title">HellaClips</h3>
+                                            <h4 class="portfolio-cat">Skate videos</h4>
+
+                                            <div class="btn-group">
+                                                <a class="btn-link"
+                                                   href="https://itunes.apple.com/us/app/hellaclips-skateboarding-videos/id1041843130?mt=8"
+                                                   target="_blank">
+                                                    <i class="rsicon fa fa-apple"></i>
+                                                </a>
+                                                <a class="btn-link"
+                                                   href="https://play.google.com/store/apps/details?id=com.blacksunpro.hellaclips"
+                                                   target="_blank">
+                                                    <i class="rsicon fa fa-android"></i>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </figcaption>
+                                </figure>
+                            </div>
+                        </div>
+                        <div class="grid-item size11 ios">
+                            <div class="grid-box">
+                                <figure class="portfolio-figure">
+                                    <img src="img/screenshots/screen_astro.jpeg" alt="Astro Gaming"/>
+                                    <figcaption class="portfolio-caption">
+                                        <div class="portfolio-caption-inner">
+                                            <h3 class="portfolio-title">Astro Gaming</h3>
+                                            <h4 class="portfolio-cat">Astro</h4>
+
+                                            <div class="btn-group">
+                                                <a class="btn-link"
+                                                   href="https://itunes.apple.com/us/app/astro-gaming/id943522219?mt=8"
+                                                   target="_blank">
+                                                    <i class="rsicon fa fa-apple"></i>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </figcaption>
+                                </figure>
+                            </div>
+                        </div>
+                        <div class="grid-item size11 ios android">
+                            <div class="grid-box">
+                                <figure class="portfolio-figure">
+                                    <img src="img/screenshots/screen_b4bc.jpeg" alt="Boarding for Breast Cancer"/>
+                                    <figcaption class="portfolio-caption">
+                                        <div class="portfolio-caption-inner">
+                                            <h3 class="portfolio-title">Boarding for Breast Cancer</h3>
+                                            <h4 class="portfolio-cat">Breast cancer awareness app</h4>
+
+                                            <div class="btn-group">
+                                                <a class="btn-link"
+                                                   href="https://itunes.apple.com/us/app/b4bc/id588802038?mt=8"
+                                                   target="_blank">
+                                                    <i class="rsicon fa fa-apple"></i>
+                                                </a>
+                                                <a class="btn-link"
+                                                   href="https://play.google.com/store/apps/details?id=com.blacksunpro.b4bc"
+                                                   target="_blank">
+                                                    <i class="rsicon fa fa-android"></i>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </figcaption>
+                                </figure>
+                            </div>
+                        </div>
+                        <div class="grid-item size11 ios android">
+                            <div class="grid-box">
+                                <figure class="portfolio-figure">
+                                    <img src="img/screenshots/screen_absinthe.jpeg" alt="Absinthe Films"/>
+                                    <figcaption class="portfolio-caption">
+                                        <div class="portfolio-caption-inner">
+                                            <h3 class="portfolio-title">Absinthe Films</h3>
+                                            <h4 class="portfolio-cat">Snowboard films & clips</h4>
+                                            <div class="btn-group">
+                                                <a class="btn-link"
+                                                   href="https://itunes.apple.com/us/app/absinthe-films/id589314994?mt=8"
+                                                   target="_blank">
+                                                    <i class="rsicon fa fa-apple"></i>
+                                                </a>
+                                                <a class="btn-link"
+                                                   href="https://play.google.com/store/apps/details?id=com.blacksunpro.absinthe"
+                                                   target="_blank">
+                                                    <i class="rsicon fa fa-android"></i>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </figcaption>
+                                </figure>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="grid-more">
+                        <span class="ajax-loader"></span>
+                        <button class="btn btn-border ripple"><i class="rsicon rsicon-add"></i></button>
+                    </div>
+                </div>
+            </section>
+            <section id="experience" class="section section-experience">
+                <div class="animate-up">
+                    <h2 class="section-title">Work Experience</h2>
+                    <div class="timeline">
+                        <div class="timeline-bar"></div>
+                        <div class="timeline-inner clearfix">
+                            <div class="timeline-box timeline-box-left">
+                                <span class="dot"></span>
+                                <div class="timeline-box-inner animate-right">
+                                    <span class="arrow"></span>
+                                    <div class="date">2010 - 2016</div>
+                                    <h3>PICK UP AND PLAY</h3>
+                                    <h4>Software Engineer</h4>
+                                    <p>iOS, Android and Unity programming</p>
+                                </div>
+                            </div>
+                            <div class="timeline-box timeline-box-right">
+                                <span class="dot"></span>
+                                <div class="timeline-box-inner animate-left">
+                                    <span class="arrow"></span>
+                                    <div class="date">2006 - 2010</div>
+                                    <h3>PICK UP AND PLAY</h3>
+                                    <h4>QA Manager</h4>
+                                    <p>Test, manage bug database. Also game design, sound design, music</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section id="education" class="section section-education">
+                <div class="animate-up">
+                    <h2 class="section-title">Education</h2>
+                    <div class="timeline">
+                        <div class="timeline-bar"></div>
+                        <div class="timeline-inner clearfix">
+                            <div class="timeline-box timeline-box-compact timeline-box-left">
+                                <span class="dot"></span>
+                                <div class="timeline-box-inner animate-right">
+                                    <span class="arrow"></span>
+                                    <div class="date"><span>2017</span></div>
+                                    <h3>Accelerated Web Development Program</h3>
+                                    <h4>Learning Fuze</h4>
+                                </div>
+                            </div>
+                            <div class="timeline-box timeline-box-compact timeline-box-right">
+                                <span class="dot"></span>
+
+                                <div class="timeline-box-inner animate-left">
+                                    <span class="arrow"></span>
+                                    <div class="date"><span>2006</span></div>
+                                    <h3>B.A. Communications</h3>
+                                    <h4>California State University Fullerton</h4>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section id="references" class="section section-references">
+                <div class="animate-up">
+                    <h2 class="section-title">References</h2>
+
+                    <div class="section-box">
+                        <ul class="ref-slider">
+                            <li>
+                                <div class="ref-box">
+                                    <div class="person-speech">
+                                        <p>I confirm that I have dealt with New Company Ltd since 1998. Their work has
+                                            been a major
+                                            factor in our
+                                            website's success, helping it to become one of the most visited resources of
+                                            its kind on
+                                            the Internet.</p>
+                                    </div>
+                                    <div class="person-info clearfix">
+                                        <img class="person-img" src="img/uploads/rs-avatar-60x60.jpg" alt="Headshot">
+
+                                        <div class="person-name-title">
+                                            <span class="person-name">Alexander Jokovich</span>
+                                            <span class="person-title">Modern LLC , HR</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="ref-box">
+                                    <div class="person-speech">
+                                        <p>I confirm that New Company Ltd has been a customer of ours since 1998, during
+                                            which time
+                                            they have always made payments reliably,
+                                            in full and on time.</p>
+                                    </div>
+                                    <div class="person-info clearfix">
+                                        <img class="person-img" src="img/uploads/rs-avatar-60x60.jpg" alt="Headshot">
+
+                                        <div class="person-name-title">
+                                            <span class="person-name">Alexander Jokovich</span>
+                                            <span class="person-title">Modern LLC , HR</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="ref-box">
+                                    <div class="person-speech">
+                                        <p>I have known Robert Smith for 10 years as web developer. I can confirm that
+                                            he is a man
+                                            of great integrity, is extremely dedicated
+                                            to his family and work, and is entirely peace-loving.</p>
+                                    </div>
+                                    <div class="person-info clearfix">
+                                        <img class="person-img" src="img/uploads/rs-avatar-60x60.jpg" alt="Headshot">
+
+                                        <div class="person-name-title">
+                                            <span class="person-name">Alexander Jokovich</span>
+                                            <span class="person-title">Modern LLC , HR</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                        <div class="ref-slider-nav">
+                            <span id="ref-slider-prev" class="slider-prev"></span>
+                            <span id="ref-slider-next" class="slider-next"></span>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!--<section id="blog" class="section section-blog">
+                <div class="animate-up">
+                    <h2 class="section-title">From The Blog</h2>
+
+                    <div class="blog-grid">
+                        <div class="grid-sizer"></div>
+                        <div class="grid-item">
+                            <article class="post-box">
+                                <div class="post-media">
+                                    <div class="post-image">
+                                        <a href="single.html"><img src="img/uploads/thumb-449x286-1.jpg" alt=""> </a>
+                                    </div>
+                                </div>
+
+                                <div class="post-data">
+                                    <time class="post-datetime" datetime="2015-03-13T07:44:01+00:00">
+                                        <span class="day">03</span>
+                                        <span class="month">MAY</span>
+                                    </time>
+
+                                    <div class="post-tag">
+                                        <a href="">#Photo</a>
+                                        <a href="">#Architect</a>
+                                    </div>
+
+                                    <h3 class="post-title">
+                                        <a href="single-image.html">Image Post</a>
+                                    </h3>
+
+                                    <div class="post-info">
+                                        <a href=""><i class="rsicon rsicon-user"></i>by admin</a>
+                                        <a href=""><i class="rsicon rsicon-comments"></i>56</a>
+                                    </div>
+                                </div>
+                            </article>
+                        </div>
+
+                        <div class="grid-item">
+                            <article class="post-box">
+                                <div class="post-media">
+                                    <div class="post-image">
+                                        <a href="single-vimeo.html">
+                                            <img src="img/uploads/thumb-449x286-5.jpg" alt="">
+                                            <span class="post-type-icon"><i class="rsicon rsicon-play"></i></span>
+                                        </a>
+                                    </div>
+                                </div>
+
+                                <div class="post-data">
+                                    <time class="post-datetime" datetime="2015-03-13T07:44:01+00:00">
+                                        <span class="day">03</span>
+                                        <span class="month">MAY</span>
+                                    </time>
+
+                                    <div class="post-tag">
+                                        <a href="">#Photo</a>
+                                        <a href="">#Architect</a>
+                                    </div>
+
+                                    <h3 class="post-title">
+                                        <a href="single-vimeo.html">Vimeo Video Post</a>
+                                    </h3>
+
+                                    <div class="post-info">
+                                        <a href=""><i class="rsicon rsicon-user"></i>by admin</a>
+                                        <a href=""><i class="rsicon rsicon-comments"></i>56</a>
+                                    </div>
+                                </div>
+                            </article>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section id="text-section" class="section section-text">
+                <div class="animate-up animated">
+                    <h2 class="section-title">Text Section</h2>
+
+                    <div class="section-box">
+                        <p>Hello! I’m Robert Smith and this is custom editor section. You can add here any text or
+                            "Strikethrough"
+                            text and even you can add bulleted or numbered text and even you will be able to add
+                            blockquot text. You
+                            can align this text to left/right/center.
+
+                            One of the most interesting options is to divide this section to "One half" "One Third" and
+                            "One
+                            Fourth".
+
+                            You can use this for Honors or Achievments or Awards sections. You can insert images and
+                            photos right in
+                            this editor!</p>
+                    </div>
+                </div>
+            </section>-->
+            <section id="interests" class="section section-interests">
+                <div class="animate-up">
+                    <h2 class="section-title">My Interests</h2>
+
+                    <div class="section-box">
+                        <p>I have a keen interest in photography. I was vice-president of the photography club during my
+                            time at
+                            university,
+                            and during this period I organised a number of very successful exhibitions and events both
+                            on and off
+                            campus.
+                            <br/>I also play the piano to grade 8 standard.</p>
+
+                        <ul class="interests-list">
+                            <li>
+                                <i class="map-icon map-icon-bicycling"></i>
+                                <span>Bicycling</span>
+                            </li>
+                            <li>
+                                <i class="map-icon map-icon-movie-theater"></i>
+                                <span>Watch Movies</span>
+                            </li>
+                            <li>
+                                <i class="map-icon map-icon-ice-skating"></i>
+                                <span>Skating</span>
+                            </li>
+                            <li>
+                                <i class="map-icon map-icon-shopping-mall"></i>
+                                <span>Shopping</span>
+                            </li>
+                            <li>
+                                <i class="map-icon map-icon-tennis"></i>
+                                <span>Playing Tennis</span>
+                            </li>
+                            <li>
+                                <i class="map-icon map-icon-bowling-alley"></i>
+                                <span>Playing Bowling</span>
+                            </li>
+                            <li>
+                                <i class="map-icon map-icon-swimming"></i>
+                                <span>Swimming</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+            <section id="contact" class="section section-contact">
+                <div class="animate-up">
+                    <h2 class="section-title">Contact Me</h2>
+
+                    <div class="row">
+                        <div class="col-sm-6">
+                            <div class="section-box contact-form">
+                                <h3>Feel free to contact me</h3>
+
+                                <form class="rsForm" action="php/mailsender.php" method="post">
+                                    <div class="input-field">
+                                        <label>Name</label>
+                                        <input type="text" name="rsName" value="">
+                                        <span class="line"></span>
+                                    </div>
+
+                                    <div class="input-field">
+                                        <label>Email</label>
+                                        <input type="email" name="rsEmail" value="">
+                                        <span class="line"></span>
+                                    </div>
+
+                                    <div class="input-field">
+                                        <label>Subject</label>
+                                        <input type="text" name="rsSubject" value="">
+                                        <span class="line"></span>
+                                    </div>
+
+                                    <div class="input-field">
+                                        <label>Message</label>
+                                        <textarea rows="4" name="rsMessage"></textarea>
+                                        <span class="line"></span>
+                                    </div>
+
+                                    <span class="btn-outer btn-primary-outer ripple">
+                                        <input class="rsFormSubmit btn btn-lg btn-primary" type="submit" value="Send">
+                                    </span>
+                                </form>
+                            </div>
+                        </div>
+
+                        <div class="col-sm-6">
+                            <div class="section-box contact-info has-map">
+                                <ul class="contact-list">
+                                    <li class="clearfix">
+                                        <strong>Address</strong>
+                                        <span>Belgium, Brussels, Liutte 27, BE</span>
+                                    </li>
+                                    <li class="clearfix">
+                                        <strong>phone</strong>
+                                        <span><a href="tel:+12562548456">+1 256 254 84 56</a></span>
+                                    </li>
+                                    <li class="clearfix">
+                                        <strong>E-mail</strong>
+                                        <span><a
+                                                href="mailto:robertsmith@company.com">robertsmith@company.com</a></span>
+                                    </li>
+                                </ul>
+
+                                <div id="map" data-latitude="50.84592" data-longitude="4.366859999999974"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </div>
+    <footer class="footer">
+        <div class="footer-social">
+            <ul class="social">
+                <li><a class="ripple-centered" href="https://www.linkedin.com/in/baultik" target="_blank"><i
+                        class="rsicon rsicon-linkedin"></i></a></li>
+                <li><a class="ripple-centered" href="https://github.com/Baultik" target="_blank"><i
+                        class="rsicon rsicon-github"></i></a></li>
+            </ul>
+        </div>
+    </footer>
+</div>
+
+<a class="btn-scroll-top" href="#"><i class="rsicon rsicon-arrow-up"></i></a>
+
+<div id="overlay"></div>
+<div id="preloader">
+    <div class="preload-icon"><span></span><span></span></div>
+    <div class="preload-text">Loading ...</div>
+</div>
+
+<!-- Scripts -->
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1/jquery.js"></script>
+<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyARf46zVCjOqRvLUgIPnHhpoUdy6PR82Ms&callback=initialiseGoogleMap"></script>
+<script type="text/javascript" src="fonts/map-icons/js/map-icons.min.js"></script>
+<script type="text/javascript" src="js/plugins/jquery.mousewheel-3.0.6.pack.js"></script>
+<script type="text/javascript" src="js/plugins/imagesloaded.pkgd.min.js"></script>
+<script type="text/javascript" src="js/plugins/isotope.pkgd.min.js"></script>
+<script type="text/javascript" src="js/plugins/jquery.appear.min.js"></script>
+<script type="text/javascript" src="js/plugins/jquery.onepagenav.min.js"></script>
+<script type="text/javascript" src="js/plugins/jquery.bxslider/jquery.bxslider.min.js"></script>
+<script type="text/javascript" src="js/plugins/jquery.customscroll/jquery.mCustomScrollbar.concat.min.js"></script>
+<script type="text/javascript" src="js/plugins/jquery.mediaelement/mediaelement-and-player.min.js"></script>
+<script type="text/javascript" src="js/plugins/jquery.fancybox/jquery.fancybox.pack.js"></script>
+<script type="text/javascript" src="js/plugins/jquery.fancybox/helpers/jquery.fancybox-media.js"></script>
+<script type="text/javascript" src="js/plugins/jquery.owlcarousel/owl.carousel.min.js"></script>
+<script type="text/javascript" src="js/options.js"></script>
+<script type="text/javascript" src="js/site.min.js"></script>
+</body>
+</html>
