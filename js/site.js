@@ -353,8 +353,8 @@
 
     function initialiseGoogleMap() {
         var latlng;
-        var lat = 44.5403;
-        var lng = -78.5463;
+        var lat = 33.6595;
+        var lng = -117.7436;
         var map = $('#map');
         var mapCanvas = map.get(0);
         var map_styles = [
@@ -397,7 +397,9 @@
         var mapOptions = {
             zoom: 14,
             center: latlng,
-            scrollwheel: true,
+            scrollwheel: false,
+            streetViewControl:false,
+            mapTypeControl:false,
             mapTypeId: google.maps.MapTypeId.ROADMAP,
             styles: map_styles
         };
