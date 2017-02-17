@@ -395,7 +395,7 @@
 
         // Map Options
         var mapOptions = {
-            zoom: 14,
+            zoom: 11,
             center: latlng,
             scrollwheel: false,
             streetViewControl:false,
