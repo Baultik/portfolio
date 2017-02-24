@@ -783,6 +783,8 @@
             return false;
         });
 
+        alertify.parent(document.getElementById("contact"));
+
         /** Contact Form */
         $('.rsFormSubmit').on('click', function (e) {                        
             var rsForm = $(this).closest('.rsForm');
