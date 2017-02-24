@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" class="theme-color-e83b35 theme-skin-dark">
+<html lang="en" class="theme-color-07aaf5 theme-skin-dark">
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -26,7 +26,7 @@
     <link rel="stylesheet" type="text/css" href="js/plugins/jquery.owlcarousel/owl.carousel.css">
     <link rel="stylesheet" type="text/css" href="js/plugins/jquery.owlcarousel/owl.theme.css">
     <link rel="stylesheet" type="text/css" href="style.css">
-    <link rel="stylesheet" type="text/css" href="colors/red.css">
+    <link rel="stylesheet" type="text/css" href="colors/cyan.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
@@ -203,21 +203,6 @@
                         <div class="col-sm-4">
                             <div class="price-box">
                                 <div class="price-box-top">
-                                    <i class="fa fa-code" style="font-size: 3em"></i>
-                                </div>
-                                <div class="price-box-content">
-                                    <h3>Web</h3>
-                                    <p>I followed my passion for programming from mobile to web to supplement my mobile development experience and expand my skill set.</p>
-                                    <!--<div class="btn-wrap">
-                                        <a class="btn btn-lg btn-border" href="#">Buy Now</a>
-                                    </div>-->
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="col-sm-4">
-                            <div class="price-box">
-                                <div class="price-box-top">
                                     <i class="fa fa-mobile" style="font-size: 3em"></i>
                                 </div>
                                 <div class="price-box-content">
@@ -225,6 +210,20 @@
                                     <p>
                                         Skilled iOS and Android developer with a passion and drive to learn and excel. Mostly self taught, I pursued a career as a mobile programmer while working in QA.
                                     </p>
+                                    <!--<div class="btn-wrap">
+                                        <a class="btn btn-lg btn-border" href="#">Buy Now</a>
+                                    </div>-->
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-4">
+                            <div class="price-box">
+                                <div class="price-box-top">
+                                    <i class="fa fa-code" style="font-size: 3em"></i>
+                                </div>
+                                <div class="price-box-content">
+                                    <h3>Web</h3>
+                                    <p>I followed my passion for programming from mobile to web to supplement my mobile development experience and expand my skill set.</p>
                                     <!--<div class="btn-wrap">
                                         <a class="btn btn-lg btn-border" href="#">Buy Now</a>
                                     </div>-->
@@ -987,35 +986,44 @@
                             <div class="section-box contact-form">
                                 <!--<h3>Drop me a line</h3>-->
 
-                                <form class="rsForm" action="php/mailsender.php" method="post">
+                                <form class="rsForm" action="php/mail_handler.php" method="post">
                                     <div class="input-field">
                                         <label>Name</label>
-                                        <input type="text" name="rsName" value="">
+                                        <input type="text" name="name" value="">
                                         <span class="line"></span>
                                     </div>
 
                                     <div class="input-field">
                                         <label>Email</label>
-                                        <input type="email" name="rsEmail" value="">
+                                        <input type="email" name="email" value="">
                                         <span class="line"></span>
                                     </div>
 
                                     <div class="input-field">
                                         <label>Subject</label>
-                                        <input type="text" name="rsSubject" value="">
+                                        <input type="text" name="subject" value="">
                                         <span class="line"></span>
                                     </div>
 
                                     <div class="input-field">
                                         <label>Message</label>
-                                        <textarea rows="4" name="rsMessage"></textarea>
+                                        <textarea rows="4" name="message"></textarea>
                                         <span class="line"></span>
                                     </div>
 
                                     <span class="btn-outer btn-primary-outer ripple">
-                                        <input class="rsFormSubmit btn btn-lg btn-primary" type="submit" value="Send">
+                                        <button class="rsFormSubmit btn btn-lg btn-primary" type="button">Send</button>
                                     </span>
                                 </form>
+                                <div class="spinner-container">
+                                    <div class="spinner">
+                                        <div class="rect1"></div>
+                                        <div class="rect2"></div>
+                                        <div class="rect3"></div>
+                                        <div class="rect4"></div>
+                                        <div class="rect5"></div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
 
@@ -1065,8 +1073,9 @@
 </div>
 
 <!-- Scripts -->
+<script src="https://cdn.rawgit.com/alertifyjs/alertify.js/v1.0.10/dist/js/alertify.js"></script>
 <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1/jquery.js"></script>
-<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyARf46zVCjOqRvLUgIPnHhpoUdy6PR82Ms&callback=initialiseGoogleMap"></script>
+<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyARf46zVCjOqRvLUgIPnHhpoUdy6PR82Ms"></script>
 <script type="text/javascript" src="fonts/map-icons/js/map-icons.min.js"></script>
 <script type="text/javascript" src="js/plugins/jquery.mousewheel-3.0.6.pack.js"></script>
 <script type="text/javascript" src="js/plugins/imagesloaded.pkgd.min.js"></script>
