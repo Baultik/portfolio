@@ -395,7 +395,7 @@
 
         // Map Options
         var mapOptions = {
-            zoom: 14,
+            zoom: 11,
             center: latlng,
             scrollwheel: false,
             streetViewControl:false,
@@ -768,9 +768,6 @@
             initialiseGoogleMap();
         }
 
-
-
-
         /** Window Scroll Top Button */
         var $btnScrollTop = $('.btn-scroll-top');
         $(window).scroll(function () {
@@ -793,11 +790,12 @@
 			var rsFormAction = rsForm.attr('action');
 			var rsFormCaptcha = rsForm.data('captcha');		
 			var rsFormFields = rsForm.find('.input-field');		           	
-            var rsFormName = rsForm.find("[name='rsName']");						
-            var rsFormEmail = rsForm.find("[name='rsEmail']");
-            var rsFormMessage = rsForm.find("[name='rsMessage']");		
-            var rsFormResponce = rsForm.find('.rsFormResponce');			
-			
+            var rsFormName = rsForm.find("[name='name']");
+            var rsFormEmail = rsForm.find("[name='email']");
+            var rsFormMessage = rsForm.find("[name='message']");
+            var spinner = $(".spinner-container");
+			spinner.show();
+
 			// Button ripple effect
 			ripple($(this).parent(), e.pageX, e.pageY);
 			
@@ -833,20 +831,20 @@
 					$.post( rsFormAction,
 						rsForm.serialize(),
 						function (response) {
-							var data = jQuery.parseJSON( response );
-							if(data){								
-								rsForm.append('<div class="rsFormResponce"><strong>Congratulation!</strong><br>Your email was sent successfully!</div>');
+					        spinner.hide();
+							if(response.success){
+							    alertify.success("Your email was sent successfully!");
 							} else {
-								rsForm.append('<div class="rsFormResponce"><strong>OOPS!</strong> Something went wrong.<br>Please try again.</div>');
+							    //console.error(response.error);
+							    alertify.error("Something went wrong. Please try again");
 							}							
-						}
+						},
+                        "json"
 					);
 					return false;
 				}
 			}					                         
         });
-
-		
     });    
 
 
