@@ -2893,7 +2893,7 @@ body {
  * 9.4 - Header With BgImage
  */
 .head-logo img{
-    border-radius: 50%;
+    #border-radius: 50%;
     max-width: 40px;
     max-height: 40px;
 }
@@ -3936,14 +3936,6 @@ body {
     -webkit-transform: rotate(90deg);
     -moz-transform: rotate(90deg);
     transform: rotate(90deg);
-}
-
-.grid-more .ajax-loader {
-    display: none;
-    width: 72px;
-    height: 24px;
-    vertical-align: middle;
-    background: url("img/ajax-loader.gif");
 }
 
 .filter {
@@ -6413,10 +6405,6 @@ body {
 
 .theme-skin-dark .filter button {
     color: #9a9b9d;
-}
-
-.theme-skin-dark .grid-more .ajax-loader {
-    background: url("img/ajax-loader-dark.gif");
 }
 
 .theme-skin-dark .timeline-box-left .timeline-box-inner .arrow:before {
