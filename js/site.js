@@ -636,13 +636,26 @@
         });
 
         // open/close mobile navigation
-        $(document).on(clickEventType, '.btn-mobile', function () {
+        if (document.ontouchstart !== null) {
+            $(document).on("touchstart", '.btn-mobile', function () {
+                toggleMobileNav();
+                event.preventDefault();
+                console.log("touch");
+            });
+        }
+
+        $(document).on("click", ".btn-mobile", function () {
+            toggleMobileNav();
+            console.log("click");
+        });
+
+        function toggleMobileNav() {
             if ($('body').hasClass('mobile-nav-opened')) {
                 closeMobileNav();
             } else {
                 openMobileNav();
             }
-        });
+        }
 
         // init mobile navigation custom scroll
         if ($('.mobile-nav').length > 0) {
@@ -796,7 +809,6 @@
             var rsFormEmail = rsForm.find("[name='email']");
             var rsFormMessage = rsForm.find("[name='message']");
             var spinner = $(".spinner-container");
-			spinner.show();
 
 			// Button ripple effect
 			ripple($(this).parent(), e.pageX, e.pageY);
@@ -830,19 +842,25 @@
 					return true;
 				} else {
 					// if no captcha - make ajax request
-					$.post( rsFormAction,
-						rsForm.serialize(),
-						function (response) {
-					        spinner.hide();
-							if(response.success){
-							    alertify.success("Your email was sent successfully!");
-							} else {
-							    //console.error(response.error);
-							    alertify.error("Something went wrong. Please try again");
-							}							
-						},
-                        "json"
-					);
+                    spinner.show();
+					$.post({
+					    url:rsFormAction,
+                        data:rsForm.serialize(),
+                        dataType:"json",
+                        success:function (response) {
+                            spinner.hide();
+                            if(response.success){
+                                alertify.success("Your email was sent successfully!");
+                            } else {
+                                console.error(response.error);
+                                alertify.error("Something went wrong. Please try again");
+                            }
+                        },
+                        error:function () {
+                            spinner.hide();
+                            alertify.error("Something went wrong. Please try again");
+                        }
+                    });
 					return false;
 				}
 			}					                         

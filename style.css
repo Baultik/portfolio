@@ -4147,6 +4147,18 @@ body {
     transition-delay: 0.2s;
 }
 
+@media (max-width: 992px) {
+    .grid .grid-item,
+    .grid .grid-sizer {
+        width: 50%;
+    }
+
+    .grid .size11,
+    .grid .size22 {
+        width: 50%;
+    }
+}
+
 @media (max-width: 767px) {
     .filter-bar {
         display: none;
@@ -4176,12 +4188,12 @@ body {
 
     .grid .grid-item,
     .grid .grid-sizer {
-        width: 50%;
+        width: 100%;
     }
 
     .grid .size11,
     .grid .size22 {
-        width: 50%;
+        width: 100%;
     }
 
     .grid .size11 .portfolio-title,
@@ -4203,7 +4215,17 @@ body {
 
     .grid .size11 .portfolio-title,
     .grid .size22 .portfolio-title {
-        font-size: 22px;
+        font-size: 17px;
+    }
+
+    .portfolio-figure .portfolio-title {
+        line-height: 1.0;
+        margin-bottom: 4px;
+    }
+
+    .portfolio-figure .portfolio-cat {
+        font-size: 9px;
+        line-height: 1.0;
     }
 }
 
