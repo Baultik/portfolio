@@ -843,7 +843,8 @@
 				} else {
 					// if no captcha - make ajax request
                     spinner.show();
-					$.post({
+					$.ajax({
+					    method:"POST",
 					    url:rsFormAction,
                         data:rsForm.serialize(),
                         dataType:"json",
