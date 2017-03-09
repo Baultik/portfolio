@@ -843,9 +843,9 @@
 				} else {
 					// if no captcha - make ajax request
                     spinner.show();
-					$.ajax({
-					    method:"POST",
-					    url:rsFormAction,
+                    var request = {
+                        method:"POST",
+                        url:rsFormAction,
                         data:rsForm.serialize(),
                         dataType:"json",
                         success:function (response) {
@@ -857,11 +857,13 @@
                                 alertify.error("Something went wrong. Please try again");
                             }
                         },
-                        error:function () {
+                        error:function (reason,status,error) {
                             spinner.hide();
+                            console.log("error: "+status+" "+error);
                             alertify.error("Something went wrong. Please try again");
                         }
-                    });
+                    };
+					$.ajax(request);
 					return false;
 				}
 			}					                         

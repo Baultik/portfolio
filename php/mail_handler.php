@@ -1,6 +1,6 @@
 <?php
-require_once('emailconfig.php');
-require("phpmailer/PHPMailerAutoload.php");
+require_once(dirname(__FILE__)."/emailconfig.php");
+require(dirname(__FILE__)."/phpmailer/PHPMailerAutoload.php");
 $mail = new PHPMailer;
 //$mail->SMTPDebug = 3;            // Enable verbose debug output
 
@@ -53,5 +53,6 @@ if(!$mail->send()) {
 } else {
     $output["success"] = true;
 }
+
 $json = json_encode($output);
 echo $json;
