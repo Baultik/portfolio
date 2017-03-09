@@ -853,13 +853,11 @@
                             if(response.success){
                                 alertify.success("Your email was sent successfully!");
                             } else {
-                                console.error(response.error);
                                 alertify.error("Something went wrong. Please try again");
                             }
                         },
                         error:function (reason,status,error) {
                             spinner.hide();
-                            console.log("error: "+status+" "+error);
                             alertify.error("Something went wrong. Please try again");
                         }
                     };
