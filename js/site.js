@@ -808,6 +808,7 @@
             var rsFormName = rsForm.find("[name='name']");
             var rsFormEmail = rsForm.find("[name='email']");
             var rsFormMessage = rsForm.find("[name='message']");
+            var rsFormSubject = rsForm.find("[name='subject']");
             var spinner = $(".spinner-container");
 
 			// Button ripple effect
@@ -832,6 +833,18 @@
                 rsFormErrors = true;
                 rsFormMessage.parent().addClass('error');
             }
+
+            function clearContactForm() {
+                rsFormName.val("");
+                rsFormEmail.val("");
+                rsFormMessage.val("");
+                rsFormSubject.val("");
+
+                rsFormName.blur();
+                rsFormEmail.blur();
+                rsFormMessage.blur();
+                rsFormSubject.blur();
+            }
 									
 			if(rsFormErrors) {
 				// if has errors - do nothing
@@ -855,6 +868,7 @@
                             } else {
                                 alertify.error("Something went wrong. Please try again");
                             }
+                            clearContactForm();
                         },
                         error:function (reason,status,error) {
                             spinner.hide();
